@@ -1,5 +1,0 @@
-CREATE USER 'adminCG'@'localhost' IDENTIFIED BY 'CG123'; 
-
-GRANT ALL PRIVILEGES ON controleGastos . * TO 'adminCG'@'localhost'; 
-
-FLUSH PRIVILEGES;
