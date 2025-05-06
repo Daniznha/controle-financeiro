@@ -1,0 +1,163 @@
+body{
+  background-color: #e7c4fc;
+}
+.container {
+  max-width: 400px;
+  background: #ACBCFF;
+  background: linear-gradient(0deg, #afbefd 0%, #85d4ff 100%);
+  border-radius: 40px;
+  padding: 25px 35px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+  margin: 20px auto; /* auto nas laterais para centralizar */
+}
+
+.heading {
+  text-align: center;
+  font-weight: 900;
+  font-size: 25px;
+  color: #AB46D2;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.form, .input,.form-control {
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  margin-top: 15px;
+  box-shadow: #B799FF 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+  color: #9900F0;
+}
+
+.form, .input::-moz-placeholder {
+  color: #B799FF;
+}
+
+.form, .input::placeholder {
+  color: #B799FF;
+}
+
+.form, .input:focus,.form-control {
+  outline: none;
+  border-inline: 2px solid #aa48d1;
+}
+
+.cad {
+  font-size: 15px;
+  color: #4700D8;
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.cad a {
+  text-decoration: none;
+  color: #4700D8;
+}
+
+.cad a:hover {
+  transition: .5s;
+  color: #9900F0;
+  text-transform: uppercase;
+}
+
+.form, .login-button {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  background: linear-gradient(45deg, #A760FF 0%, #CA82FF 100%);
+  color: white;
+  padding-block: 15px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.botao{
+  display: block;
+  width: 10%;
+  font-weight: bold;
+  background: linear-gradient(45deg, #A760FF 0%, #CA82FF 100%);
+  color: white;
+  padding-block: 15px;
+  margin: 10px ;
+  border-radius: 20px;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.form, .login-button:hover,.botao {
+  transform: scale(1.03);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+}
+
+.form, .login-button:active, .botao {
+  transform: scale(0.95);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}
+
+.mensagem {
+  color: #FF008E;
+}
+.mensagem-cad{
+  color: #54B435;
+}
+
+
+.container label{
+  color: #AB46D2;
+}
+
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background: #dce2fa;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: #AB46D2;
+  transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #B799FF;
+  font-weight: 600;
+  color: #fff;
+}
+
+#ef, #ef a{
+  text-align: justify;
+  text-decoration: none;
+}

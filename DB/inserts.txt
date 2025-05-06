@@ -1,0 +1,43 @@
+CREATE DATABASE controleGastos;
+
+USE controleGastos;
+
+CREATE TABLE usuarios (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    sexo ENUM('masculino', 'feminino') NOT NULL
+);
+
+CREATE TABLE renda (
+	id_renda INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario int not null,
+    valor decimal(10,2) not null default '0.00',
+	FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);
+
+CREATE TABLE gastos (
+    id_gastos INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario int not null,
+    nome VARCHAR(255) not null,
+    categoria enum('alimentação','transporte','saúde','educação','lazer','vestuário','dívidas','moradia') not null,
+    valor decimal(10,2) not null,
+    dt_gasto date not null,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);
+CREATE TABLE receitas (
+    id_receita INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario int not null,
+    nome varchar(255) not null,
+    valor decimal(10,2) not null,
+    dt_receita date not null,
+    observacoes TEXT,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);
+CREATE TABLE limite_gastos(
+id_metas int not null auto_increment primary key,
+id_usuario int not null,
+valor_limite decimal(10,2) not null,
+FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+);

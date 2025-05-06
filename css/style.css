@@ -1,0 +1,37 @@
+#grafico-container,
+#grafico-mensal-container,
+#grafico-anual-container {
+    height: 400px;
+    width: 100%;
+}
+h3{
+    text-align: center;
+}
+.form-select{
+    margin-top: 15px ;
+}
+tbody input, select,nav{
+    width: 100%;
+    background: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: #B799FF 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+    color: #9900F0;
+}
+tbody input:focus, select:focus {
+    outline: none;
+    border-inline: 2px solid #AB46D2;
+  }
+   
+  input{
+    box-shadow:#B799FF 0px 10px 10px -5px;
+  }
+.navbar-nav .nav-link:not(:last-child) {
+    border-right: 1px solid #000;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+
+
